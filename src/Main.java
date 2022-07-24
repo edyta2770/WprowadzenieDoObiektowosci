@@ -21,7 +21,7 @@ public class Main {
         Calculator calc = new Calculator();
         Scanner scanner = new Scanner(System.in);
         System.out.println("Prosze podac pierwsza liczbe");
-        int firstvariable  = scanner.nextInt();
+        int firstvariable = scanner.nextInt();
         System.out.println("Prosze podac druga liczbe");
         int secondvariable = scanner.nextInt();
         System.out.println("Twoj wynik to" + calc.add(firstvariable, secondvariable));
@@ -29,10 +29,28 @@ public class Main {
         System.out.println("Twoj wynik to" + calc.multi(firstvariable, secondvariable));
 
 
+        System.out.println("podaj pierwsza liczbe");
+        int x = scanner.nextInt();
+        System.out.println("podaj jaka operacje chcesz wykonac wpisujac: + - * /*");
+        String znak = scanner.next();
+        System.out.println("podaj druga liczbe");
+        int y = scanner.nextInt();
+        switch (znak){
+            case ("+"):
+                System.out.println (calc.add(x, y));
+                break;
+            case ("-"):
+                System.out.println (calc.sub(x, y));
+                break;
+            case ("*"):
+                System.out.println (calc.multi(x, y));
+                break;
+
+
+
 
 
         }
-
 
 
     }
