@@ -13,8 +13,15 @@ public class Car {
 public void setAutomaticgearbox (boolean automaticgearbox){
         this.automaticgearbox = automaticgearbox;
 }
-public boolean getAutomaticGearbox(){
-        return automaticgearbox;
+public boolean getAutomaticGearbox() {
+    return automaticgearbox;
+}
+public void setColour (String colour) {
+        this.colour = colour;
+}
+public String getColour (){
+        return colour;
+
 }
 
 }
