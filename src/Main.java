@@ -25,11 +25,13 @@ public class Main {
         System.out.println("Prosze podac druga liczbe");
         int secondvariable = scanner.nextInt();
         System.out.println("Twoj wynik to" + calc.add(firstvariable, secondvariable));
+        System.out.println("Twoj wynik to" + calc.sub(firstvariable, secondvariable));
+        System.out.println("Twoj wynik to" + calc.multi(firstvariable, secondvariable));
 
 
 
 
-
+        }
 
 
 
